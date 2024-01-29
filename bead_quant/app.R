@@ -50,7 +50,10 @@ ui <- dashboardPage(
                    the can be downloaded in the left panel."),
                  h3("Changelog"),
                  tagList("Statistical analysis can now handle expereiments with one biological replicate.", "Statistics have been improved to favour experiment replicate over bead replicate
-                   within experiment.", "Some graph issues with one experimental replicate have been repaired."),),
+                   within experiment.", "Some graph issues with one experimental replicate have been repaired."),
+                h3("Citations"),
+                 p("To cite this programme please use the following reference: https://doi.org/10.5281/zenodo.7442261")
+                ),
              box(title="Settings", height = 500,
                  p("Please choose the exclusion criteria of your data (removing bad analysis points):"),
                  checkboxInput(inputId = "SD_Exclude", label = "SD is greater than 50% raw average", value = T),
